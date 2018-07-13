@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export default class SimpleSlide extends Component {
   render() {
@@ -40,11 +41,11 @@ export default class SimpleSlide extends Component {
 }
 
 SimpleSlide.propTypes = {
-  slide: React.PropTypes.object,
-  showPrev: React.PropTypes.bool,
-  showNext: React.PropTypes.bool,
-  onPrev: React.PropTypes.func,
-  onNext: React.PropTypes.func,
-  onClose: React.PropTypes.func,
-  classNamePrefix: React.PropTypes.string,
+  slide: PropTypes.object,
+  showPrev: PropTypes.bool,
+  showNext: PropTypes.bool,
+  onPrev: PropTypes.func,
+  onNext: PropTypes.func,
+  onClose: PropTypes.func,
+  classNamePrefix: PropTypes.string,
 };
