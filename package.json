@@ -1,14 +1,14 @@
 {
   "name": "react-simple-modal-slideshow",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "A simple React modal media slideshow with CSS powered animations",
   "main": "lib/SimpleModalSlideshow.js",
-  "author": "TiuSh <masy.mathieu@gmail.com>",
+  "author": "Daniel Riley <driley3@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/TiuSh/react-simple-modal-slideshow",
+  "homepage": "https://github.com/danielriley06/react-simple-modal-slideshow.git",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TiuSh/react-simple-modal-slideshow.git"
+    "url": "git+https://github.com/danielriley06/react-simple-modal-slideshow.git"
   },
   "bugs": {
     "url": "https://github.com/TiuSh/react-simple-modal-slideshow/issues"
@@ -24,7 +24,7 @@
     "react-component"
   ],
   "peerDependencies": {
-    "react": "^15.0.0",
+    "react": "^16.0.0",
     "react-transition-group": "^1.2.1"
   },
   "devDependencies": {
