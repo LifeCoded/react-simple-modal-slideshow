@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
 import debug from 'debug';
 
@@ -335,33 +336,33 @@ export default class SimpleModalSlideshow extends Component {
 
 SimpleModalSlideshow.propTypes = {
   // Slides
-  slides: React.PropTypes.arrayOf(
-    React.PropTypes.shape({
-      media: React.PropTypes.node.isRequired,
-      content: React.PropTypes.node,
+  slides: PropTypes.arrayOf(
+    PropTypes.shape({
+      media: PropTypes.node.isRequired,
+      content: PropTypes.node,
     })
   ).isRequired,
 
   // Controls
-  open: React.PropTypes.bool,
-  currentSlide: React.PropTypes.number,
+  open: PropTypes.bool,
+  currentSlide: PropTypes.number,
 
   // Options
-  enableApi: React.PropTypes.bool,
-  classNamePrefix: React.PropTypes.string,
+  enableApi: PropTypes.bool,
+  classNamePrefix: PropTypes.string,
 
   // Animations
-  modalAnimations: React.PropTypes.bool,
-  slideAnimations: React.PropTypes.bool,
-  modalTransitionEnterTimeout: React.PropTypes.number,
-  modalTransitionLeaveTimeout: React.PropTypes.number,
-  slideTransitionEnterTimeout: React.PropTypes.number,
-  slideTransitionLeaveTimeout: React.PropTypes.number,
+  modalAnimations: PropTypes.bool,
+  slideAnimations: PropTypes.bool,
+  modalTransitionEnterTimeout: PropTypes.number,
+  modalTransitionLeaveTimeout: PropTypes.number,
+  slideTransitionEnterTimeout: PropTypes.number,
+  slideTransitionLeaveTimeout: PropTypes.number,
 
   // Event listeners
-  onClose: React.PropTypes.func,
-  onPrev: React.PropTypes.func,
-  onNext: React.PropTypes.func,
+  onClose: PropTypes.func,
+  onPrev: PropTypes.func,
+  onNext: PropTypes.func,
 };
 
 SimpleModalSlideshow.defaultProps = {
