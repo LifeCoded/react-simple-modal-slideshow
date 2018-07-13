@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 import debug from 'debug';
 
 import SimpleModal from './SimpleModal.jsx';
@@ -319,7 +319,7 @@ export default class SimpleModalSlideshow extends Component {
     }
 
     return (
-        <ReactCSSTransitionGroup
+        <CSSTransitionGroup
           component="div"
           transitionName={`${this.props.classNamePrefix}__modal`}
           transitionEnter={this.props.modalAnimations}
@@ -328,7 +328,7 @@ export default class SimpleModalSlideshow extends Component {
           transitionLeaveTimeout={this.props.modalTransitionLeaveTimeout}
         >
           {modal}
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
     );
   }
 }

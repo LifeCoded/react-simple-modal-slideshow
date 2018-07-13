@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 import SimpleSlide from './SimpleSlide.jsx';
 
@@ -14,7 +14,7 @@ export default class SimpleModal extends Component {
           Close
         </a>
 
-        <ReactCSSTransitionGroup
+        <CSSTransitionGroup
           component="div"
           transitionName={{
             enter: `${this.props.classNamePrefix}__slide-enter`
@@ -35,7 +35,7 @@ export default class SimpleModal extends Component {
             {...this.props}
             key={this.props.slideIndex}
           />
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
       </div>
     );
   }

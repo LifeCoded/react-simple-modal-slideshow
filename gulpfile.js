@@ -29,7 +29,7 @@ gulp.task('build:lib', function() {
       },
       externals: [
         'react',
-        'react-addons-css-transition-group'
+        'react-transition-group'
       ],
       devtool: 'source-map',
     }))

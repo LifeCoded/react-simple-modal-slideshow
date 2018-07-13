@@ -17,7 +17,7 @@
     "build": "./node_modules/.bin/gulp build",
     "test": "./node_modules/.bin/karma start --browsers Firefox --single-run",
     "dev": "./node_modules/.bin/gulp dev",
-    "prepublish": "npm build"
+    "prepublish": "npm run build"
   },
   "keywords": [
     "react",
@@ -25,10 +25,11 @@
   ],
   "peerDependencies": {
     "react": "^15.0.0",
-    "react-addons-css-transition-group": "^15.0.0"
+    "react-transition-group": "^1.2.1"
   },
   "devDependencies": {
     "babel": "^6.5.2",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.0",
     "babel-loader": "^6.2.4",
     "babel-plugin-transform-function-bind": "^6.8.0",
@@ -62,9 +63,9 @@
     "mocha": "^2.5.3",
     "node-sass": "^3.8.0",
     "react": "^15.2.1",
-    "react-addons-css-transition-group": "^15.2.1",
     "react-addons-test-utils": "^15.2.1",
     "react-dom": "^15.2.1",
+    "react-transition-group": "^1.2.1",
     "run-sequence": "^1.2.1",
     "simple-mock": "^0.7.0",
     "webpack": "^1.13.1",
