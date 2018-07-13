@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { CSSTransitionGroup } from 'react-transition-group';
 
 import SimpleSlide from './SimpleSlide.jsx';
@@ -42,16 +43,16 @@ export default class SimpleModal extends Component {
 }
 
 SimpleModal.propTypes = {
-  slide: React.PropTypes.object,
-  slideIndex: React.PropTypes.number,
-  slideAnimations: React.PropTypes.bool,
-  slideAnimationDirection: React.PropTypes.string,
-  showPrev: React.PropTypes.bool,
-  showNext: React.PropTypes.bool,
-  onPrev: React.PropTypes.func,
-  onNext: React.PropTypes.func,
-  onClose: React.PropTypes.func,
-  classNamePrefix: React.PropTypes.string,
-  slideTransitionEnterTimeout: React.PropTypes.number,
-  slideTransitionLeaveTimeout: React.PropTypes.number,
+  slide: PropTypes.object,
+  slideIndex: PropTypes.number,
+  slideAnimations: PropTypes.bool,
+  slideAnimationDirection: PropTypes.string,
+  showPrev: PropTypes.bool,
+  showNext: PropTypes.bool,
+  onPrev: PropTypes.func,
+  onNext: PropTypes.func,
+  onClose: PropTypes.func,
+  classNamePrefix: PropTypes.string,
+  slideTransitionEnterTimeout: PropTypes.number,
+  slideTransitionLeaveTimeout: PropTypes.number,
 };
