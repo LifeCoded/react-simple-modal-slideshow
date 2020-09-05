@@ -61,7 +61,7 @@
     "lorem-ipsum": "^1.0.3",
     "merge-stream": "^1.0.0",
     "mocha": "^2.5.3",
-    "node-sass": "^3.8.0",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.6.2",
     "react": "^15.2.1",
     "react-addons-test-utils": "^15.2.1",
